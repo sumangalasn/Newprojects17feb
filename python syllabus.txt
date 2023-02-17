@@ -1,0 +1,35 @@
+python:
+--------------------------------
+module1: Introduction to python
+module2:python data types
+module3:python program flow control
+module4:python functions,modules and packages
+module5:python string,list,tuple,set and dictionary manipulations
+module6:python file operation
+module7:python OOPs
+module8:python regular expressions
+module9:python expection handling
+module10:python database interaction incluing MongoDB
+module11:python multithreading
+module12:contacting user through Emails using python
+module13:python CGI introduction
+
+-----------------------------------------------------------------------------------------------------------------
+Django:
+------
+module1:introduction to django web framework
+module2:Django MVC pattern
+module3:Getting started with django
+module4:Create an application
+module5:Dango-admin interface
+module6:views layer
+module7:Django-URl mapping
+module8:Django Template Language(DTL)
+module9:Django-models
+module10:Django-sending e-mails
+module11:Django-Form processing
+module12:Django-File Uploading
+module13:django Cookies handling
+module14:Django admin
+module15:static files
+module16:sample projects and websites
