@@ -1,0 +1,443 @@
+# Django Web Framework
+django==3.1.3
+
+# Django Cors Headers - Used to enable CORS headers in API responses, and allow requests to be made to your API server from other origins.
+django-cors-headers==3.5.0
+
+# Django Rest Framework - Used to design API logic
+djangorestframework==3.12.2
+
+# MySQL Client - Used as an interface to connect Django application to the MySQL server.
+mysqlclient==2.0.1
+
+
+
+
+Microsoft Windows [Version 10.0.22000.1455]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\work\python\Newprojects\todoapi>cd..
+
+D:\work\python\Newprojects>cd todoapi_env
+
+D:\work\python\Newprojects\todoapi_env>cd scripts
+
+D:\work\python\Newprojects\todoapi_env\Scripts>activate
+
+(todoapi_env) D:\work\python\Newprojects\todoapi_env\Scripts>cd..
+
+(todoapi_env) D:\work\python\Newprojects\todoapi_env>cd..
+
+(todoapi_env) D:\work\python\Newprojects>cd todoapi
+
+(todoapi_env) D:\work\python\Newprojects\todoapi>todoapi
+'todoapi' is not recognized as an internal or external command,
+operable program or batch file.
+
+(todoapi_env) D:\work\python\Newprojects\todoapi>cd todoapi
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py manage.py
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 22, in <module>
+    main()
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py migrations
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 22, in <module>
+    main()
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py makemigrations
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 22, in <module>
+    main()
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>                                                 
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>pip install django
+Collecting django
+  Downloading Django-4.1.7-py3-none-any.whl (8.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 938.3 kB/s eta 0:00:00
+Collecting tzdata
+  Using cached tzdata-2022.7-py2.py3-none-any.whl (340 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.6.0-py3-none-any.whl (23 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.6.0 django-4.1.7 sqlparse-0.4.3 tzdata-2022.7
+
+[notice] A new release of pip available: 22.3.1 -> 23.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>pip install djangorestframework
+Collecting djangorestframework
+  Using cached djangorestframework-3.14.0-py3-none-any.whl (1.1 MB)
+Collecting pytz
+  Using cached pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+Requirement already satisfied: django>=3.0 in d:\work\python\newprojects\todoapi_env\lib\site-packages (from djangorestframework) (4.1.7)
+Requirement already satisfied: sqlparse>=0.2.2 in d:\work\python\newprojects\todoapi_env\lib\site-packages (from django>=3.0->djangorestframework) (0.4.3)
+Requirement already satisfied: tzdata in d:\work\python\newprojects\todoapi_env\lib\site-packages (from django>=3.0->djangorestframework) (2022.7)
+Requirement already satisfied: asgiref<4,>=3.5.2 in d:\work\python\newprojects\todoapi_env\lib\site-packages (from django>=3.0->djangorestframework) (3.6.0)
+Installing collected packages: pytz, djangorestframework
+Successfully installed djangorestframework-3.14.0 pytz-2022.7.1
+
+[notice] A new release of pip available: 22.3.1 -> 23.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py makemigrations
+No changes detected
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py migrate       
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 14:00:24
+Django version 4.1.7, using settings 'todoapi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Feb/2023 14:00:26] "GET / HTTP/1.1" 200 10681
+[14/Feb/2023 14:00:26] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[14/Feb/2023 14:00:26] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[14/Feb/2023 14:00:26] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[14/Feb/2023 14:00:26] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[14/Feb/2023 14:00:26] "GET /favicon.ico HTTP/1.1" 404 2111
+D:\work\python\Newprojects\todoapi\todoapi\todoapi\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 14:01:32
+Django version 4.1.7, using settings 'todoapi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py startapp todolist
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>cd todolist
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi\todolist>python manage.py showmigrations
+C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\python.exe: can't open file 'D:\\work\\python\\Newprojects\\todoapi\\todoapi\\todolist\\manage.py': [Errno 2] No such file or directory
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi\todolist>cd..
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py showmigrations
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\mysql\base.py", line 15, in <module>
+    import MySQLdb as Database
+ModuleNotFoundError: No module named 'MySQLdb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 22, in <module>
+    main()
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2800.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\contrib\auth\models.py", line 3, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\contrib\auth\base_user.py", line 49, in <module>
+    class AbstractBaseUser(models.Model):
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\models\base.py", line 141, in __new__
+    new_class.add_to_class("_meta", Options(meta, app_label))
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\models\base.py", line 369, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\models\options.py", line 231, in contribute_to_class
+    self.db_table, connection.ops.max_name_length()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\connection.py", line 15, in __getattr__
+    return getattr(self._connections[self._alias], item)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\connection.py", line 62, in __getitem__
+    conn = self.create_connection(alias)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\utils.py", line 193, in create_connection
+    backend = load_backend(db["ENGINE"])
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\utils.py", line 113, in load_backend
+    return import_module("%s.base" % backend_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.2800.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\mysql\base.py", line 17, in <module>
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>pip install mysqlclient
+Collecting mysqlclient
+  Using cached mysqlclient-2.1.1-cp310-cp310-win_amd64.whl (178 kB)
+Installing collected packages: mysqlclient
+Successfully installed mysqlclient-2.1.1
+
+[notice] A new release of pip available: 22.3.1 -> 23.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py showmigrations
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 282, in ensure_connection
+    self.connect()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 263, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\MySQLdb\__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 22, in <module>
+    main()
+  File "D:\work\python\Newprojects\todoapi\todoapi\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\__init__.py", line 440, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\base.py", line 402, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\base.py", line 448, in execute
+    output = self.handle(*args, **options)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\commands\showmigrations.py", line 66, in handle
+    return self.show_list(connection, options["app_label"])
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\core\management\commands\showmigrations.py", line 85, in show_list
+    loader = MigrationLoader(connection, ignore_no_migrations=True)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\migrations\loader.py", line 58, in __init__
+    self.build_graph()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\migrations\loader.py", line 235, in build_graph
+    self.applied_migrations = recorder.applied_migrations()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\migrations\recorder.py", line 81, in applied_migrations
+    if self.has_table():
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\migrations\recorder.py", line 57, in has_table
+    with self.connection.cursor() as cursor:
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 323, in cursor
+    return self._cursor()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 299, in _cursor
+    self.ensure_connection()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 281, in ensure_connection
+    with self.wrap_database_errors:
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 282, in ensure_connection
+    self.connect()
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\base\base.py", line 263, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\django\db\backends\mysql\base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\MySQLdb\__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\work\python\Newprojects\todoapi_env\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py showmigrations
+admin
+ [ ] 0001_initial
+ [ ] 0002_logentry_remove_auto_add
+ [ ] 0003_logentry_add_action_flag_choices
+auth
+ [ ] 0001_initial
+ [ ] 0002_alter_permission_name_max_length
+ [ ] 0003_alter_user_email_max_length
+ [ ] 0004_alter_user_username_opts
+ [ ] 0005_alter_user_last_login_null
+ [ ] 0006_require_contenttypes_0002
+ [ ] 0007_alter_validators_add_error_messages
+ [ ] 0008_alter_user_username_max_length
+ [ ] 0009_alter_user_last_name_max_length
+ [ ] 0010_alter_group_name_max_length
+ [ ] 0011_update_proxy_permissions
+ [ ] 0012_alter_user_first_name_max_length
+contenttypes
+ [ ] 0001_initial
+ [ ] 0002_remove_content_type_name
+sessions
+ [ ] 0001_initial
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py migrate       
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py makemigrations todolist
+Migrations for 'todolist':
+  todolist\migrations\0001_initial.py
+    - Create model Todo
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py migrate                
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, todolist
+Running migrations:
+  Applying todolist.0001_initial... OK
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py makemigrations
+No changes detected
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py migrate       
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, todolist
+Running migrations:
+  No migrations to apply.
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 14:26:02
+Django version 4.1.7, using settings 'todoapi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[14/Feb/2023 14:26:06] "GET / HTTP/1.1" 404 2381
+Not Found: /
+[14/Feb/2023 14:26:07] "GET / HTTP/1.1" 404 2381
+[14/Feb/2023 14:26:15] "GET /todos HTTP/1.1" 301 0
+[14/Feb/2023 14:26:15] "GET /todos/ HTTP/1.1" 200 9552
+[14/Feb/2023 14:26:15] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[14/Feb/2023 14:26:15] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[14/Feb/2023 14:26:15] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[14/Feb/2023 14:26:15] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[14/Feb/2023 14:26:16] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 14:33:57
+Django version 4.1.7, using settings 'todoapi.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[14/Feb/2023 14:34:02] "GET / HTTP/1.1" 404 2381
+[14/Feb/2023 14:34:12] "GET /todos/ HTTP/1.1" 200 9552
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+[14/Feb/2023 14:34:12] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Bad Request: /todos/
+[14/Feb/2023 14:34:27] "POST /todos/ HTTP/1.1" 400 9655
+[14/Feb/2023 14:34:33] "GET /todos/ HTTP/1.1" 200 9552
+Bad Request: /todos/
+[14/Feb/2023 14:35:13] "POST /todos/ HTTP/1.1" 400 9660
+Bad Request: /todos/
+[14/Feb/2023 14:35:29] "PUT /todos/ HTTP/1.1" 400 9629
+
+(todoapi_env) D:\work\python\Newprojects\todoapi\todoapi>  
