@@ -1,0 +1,166 @@
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ pwd
+/d/git_demo/firstrepo
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git init
+Initialized empty Git repository in D:/git_demo/firstrepo/.git/
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git add alpha.txt beta.txt
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ ls
+alpha.txt  beta.txt
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git commit -m "first commit"
+[master (root-commit) 34ed8fb] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 alpha.txt
+ create mode 100644 beta.txt
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git config --global user.name "sumangalasn"
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git config --global user.email "sumangalaace@gmail.com"
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git log
+commit 34ed8fb7835dff30622cd86d8a49bb4500e4c586 (HEAD -> master)
+Author: sumangalasn <sumangalaace@gmail.com>
+Date:   Thu Feb 2 16:45:23 2023 +0530
+
+    first commit
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git branch -M master
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ ls
+alpha.txt  beta.txt
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ ^C
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ ^C
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git remote add origin https://github.com/sumangalasn/firstrepo.git
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sumangalasn/firstrepo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/git_demo/firstrepo (master)
+$
+-------------------------------------------------------------------------------------------
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj
+$ cd office_emp_proj
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj
+$ cd pycache
+bash: cd: pycache: No such file or directory
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj
+$ _pycache_
+bash: _pycache_: command not found
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj
+$ git init
+Initialized empty Git repository in D:/work/python/projects/office_emp_proj/office_emp_proj/.git/
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git add _pycache_
+fatal: pathspec '_pycache_' did not match any files
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git add .
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git add.*
+git: 'add.*' is not a git command. See 'git --help'.
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git add .
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git commit -m "first commit"
+[master (root-commit) 779aaf1] first commit
+ 13 files changed, 180 insertions(+)
+ create mode 100644 __init__.py
+ create mode 100644 __pycache__/__init__.cpython-310.pyc
+ create mode 100644 __pycache__/__init__.cpython-311.pyc
+ create mode 100644 __pycache__/settings.cpython-310.pyc
+ create mode 100644 __pycache__/settings.cpython-311.pyc
+ create mode 100644 __pycache__/urls.cpython-310.pyc
+ create mode 100644 __pycache__/urls.cpython-311.pyc
+ create mode 100644 __pycache__/wsgi.cpython-310.pyc
+ create mode 100644 __pycache__/wsgi.cpython-311.pyc
+ create mode 100644 asgi.py
+ create mode 100644 settings.py
+ create mode 100644 urls.py
+ create mode 100644 wsgi.py
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ ls
+__init__.py  __pycache__/  asgi.py  settings.py  urls.py  wsgi.py
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git config --global user.name "sumangalasn"
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git config --global user.email "sumangalaace@gmail.com"
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git log
+commit 779aaf12d828b35b92752a2602c37764b74b7f7e (HEAD -> master)
+Author: sumangalasn <sumangalaace@gmail.com>
+Date:   Thu Feb 2 22:47:40 2023 +0530
+
+    first commit
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git branch -M master
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git remote add origin https://github.com/sumangalasn/Office_Emp_Management_System.git
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$ git push -u origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 5.54 KiB | 1.85 MiB/s, done.
+Total 16 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/sumangalasn/Office_Emp_Management_System.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Lenovo@DESKTOP-IMO4J0R MINGW32 /d/work/python/projects/office_emp_proj/office_emp_proj (master)
+$
+-------------------------------------------------------------------------------------------------------------------------------
